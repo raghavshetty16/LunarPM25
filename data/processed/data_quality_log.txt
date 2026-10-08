@@ -1,0 +1,18 @@
+=== Step 1: preparing the data ===
+
+Raw file: 43824 rows, 2010-01-01 00:00:00 to 2014-12-31 23:00:00
+Missing pm2.5 readings: 2067 (4.7%)
+Number of separate gaps: 214
+Median gap length: 1 hours
+Longest gap: 155 hours, starting 2010-09-21 05:00:00
+Gaps of 6 hours or less: 158 of 214
+Trimmed 24 leading rows with no pm2.5 reading (series now starts 2010-01-02 00:00:00)
+Interpolated 580 hourly readings across gaps of 6 hours or less
+Left missing after interpolation: 1463 hours
+Days built from fewer than 18 valid hours: 79 of 1825 - their pm25 is set to missing
+Daily series: 1825 days, 2010-01-02 to 2014-12-31, 79 days without a value
+Spring Festival days flagged: 5
+Days inside a festival window: 75
+Days under APEC controls: 10
+
+Written final_dataset_daily.csv with 1825 rows and 23 columns
